@@ -13,12 +13,12 @@ function Logo() {
                         priority
                         src={LogoImage}
                         alt="Logo Images"
-                        className="rounded-full dark:filter dark:invert"
+                        className="rounded-sm dark:filter dark:invert"
                     />
                 </AspectRatio>
             </div>
-
-            Go Home    </Link>
+            Home
+        </Link>
     )
 }
 
