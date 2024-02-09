@@ -1,65 +1,98 @@
-<h1>  Saas Translation App </h1>
-Short description of your project.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title</title>
+</head>
+<body>
 
-Table of Contents
-Introduction
-Features
-Getting Started
-Prerequisites
-Installation
-Usage
-Contributing
-License
-Introduction
-Briefly introduce your project. Mention its purpose, main features, and any unique aspects that make it stand out.
+  <h1>Project Title</h1>
 
-Features
-Highlight the key features of your project. Use bullet points for easy readability.
+  <p>Short description of your project.</p>
 
-Feature 1
-Feature 2
-Feature 3
-Getting Started
-Provide instructions on how to get your project up and running on a local machine.
+  <h2>Table of Contents</h2>
 
-Prerequisites
-List any software or dependencies that need to be installed.
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ul>
 
-Node.js
-npm
-Installation
-Guide users through the installation process.
+  <h2>Introduction</h2>
 
-Clone the repository:
+  <p>Briefly introduce your project. Mention its purpose, main features, and any unique aspects that make it stand out.</p>
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
-Change into the project directory:
+  <h2>Features</h2>
 
-bash
-Copy code
-cd your-repository
-Install dependencies:
+  <p>Highlight the key features of your project.</p>
 
-bash
-Copy code
-npm install
-Usage
-Explain how users can use your project. Include code examples if necessary.
+  <ul>
+    <li>Feature 1</li>
+    <li>Feature 2</li>
+    <li>Feature 3</li>
+  </ul>
 
-bash
-Copy code
-npm run dev
-This command starts the development server.
+  <h2>Getting Started</h2>
 
-Contributing
-Provide guidelines for others who may want to contribute to your project.
+  <p>Provide instructions on how to get your project up and running on a local machine.</p>
 
-Fork the project.
-Create a new branch: git checkout -b feature-name
-Commit your changes: git commit -m 'Add some feature'
-Push to the branch: git push origin feature-name
-Submit a pull request.
-License
-This project is licensed under the [License Name] - see the LICENSE.md file for details.
+  <h3>Prerequisites</h3>
+
+  <p>List any software or dependencies that need to be installed.</p>
+
+  <ul>
+    <li>Node.js</li>
+    <li>npm</li>
+  </ul>
+
+  <h3>Installation</h3>
+
+  <p>Guide users through the installation process.</p>
+
+  <ol>
+    <li>Clone the repository:
+      <pre><code>git clone https://github.com/your-username/your-repository.git</code></pre>
+    </li>
+    <li>Change into the project directory:
+      <pre><code>cd your-repository</code></pre>
+    </li>
+    <li>Install dependencies:
+      <pre><code>npm install</code></pre>
+    </li>
+  </ol>
+
+  <h2>Usage</h2>
+
+  <p>Explain how users can use your project. Include code examples if necessary.</p>
+
+  <pre><code>npm run dev</code></pre>
+
+  <p>This command starts the development server.</p>
+
+  <h2>Contributing</h2>
+
+  <p>Provide guidelines for others who may want to contribute to your project.</p>
+
+  <ol>
+    <li>Fork the project.</li>
+    <li>Create a new branch: <code>git checkout -b feature-name</code></li>
+    <li>Commit your changes: <code>git commit -m 'Add some feature'</code></li>
+    <li>Push to the branch: <code>git push origin feature-name</code></li>
+    <li>Submit a pull request.</li>
+  </ol>
+
+  <h2>License</h2>
+
+  <p>This project is licensed under the [License Name] - see the <a href="LICENSE.md">LICENSE.md</a> file for details.</p>
+
+</body>
+</html>
