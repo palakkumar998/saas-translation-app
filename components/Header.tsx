@@ -1,5 +1,8 @@
 import React from 'react'
 import Logo from './Logo'
+import { DarkModeToggle } from './DarkModeToggle'
+
+
 
 function Header() {
     return (
@@ -10,12 +13,13 @@ function Header() {
 
                     {/* Language select components */}
 
-                    {/* Session components (
+                    {/* Session components (hadcn
+
                         
                     ) */}
+                    <DarkModeToggle />
 
-                    {/* dark mode toggle */}
-                    
+
                     {/* User Profile */}
                 </div>
             </nav>
