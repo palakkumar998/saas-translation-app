@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 
 function UserAvatar(
-    { name, image, className }: { name: string, image: string, className?: string }
+    { name, image, className }: { name?: string | null, image?: string | null, className?: string | null }
 ) {
 
     return (
@@ -14,7 +14,7 @@ function UserAvatar(
                 {image && (
                     <Image
                         src={image}
-                        alt={name}
+                        alt={name || 'User Name'}
                         width={40}
                         height={40}
                         className="rounded-full"

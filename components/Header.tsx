@@ -5,6 +5,7 @@ import UserButton from './UserButton'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/auth'
 import Link from 'next/link'
+
 import { MessageSquareCodeIcon } from 'lucide-react'
 
 
@@ -40,7 +41,7 @@ async function Header() {
 
 
                     <DarkModeToggle />
-                    <UserButton />
+                    <UserButton session = {session}  />
 
 
                     {/* User Profile */}
