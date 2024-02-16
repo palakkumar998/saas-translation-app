@@ -6,7 +6,8 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/auth'
 import Link from 'next/link'
 
-import { MessageSquareCodeIcon } from 'lucide-react'
+import { MessageSquareIcon } from 'lucide-react'
+import CreateChatButton from './CreateChatButton'
 
 
 
@@ -27,8 +28,9 @@ async function Header() {
                     {session ? (
                         <>
                             <Link href={"/chat"} prefetch={false} >
-                                <MessageSquareCodeIcon className='dark:text-white text-black' />
+                                <MessageSquareIcon className='dark:text-white text-black' />
                             </Link>
+                            <CreateChatButton />
                         </>
                     ) : (
 
@@ -41,7 +43,7 @@ async function Header() {
 
 
                     <DarkModeToggle />
-                    <UserButton session = {session}  />
+                    <UserButton session={session} />
 
 
                     {/* User Profile */}
