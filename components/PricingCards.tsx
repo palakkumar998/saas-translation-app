@@ -1,3 +1,5 @@
+import React from 'react';
+// import './PricingCards.css'; // Import the CSS file for styling
 
 const tiers = [
     {
@@ -5,7 +7,7 @@ const tiers = [
         id: null,
         href: "#",
         priceMonthly: "0₹",
-        description: "Get chatting right away withanyone, anywhere",
+        description: "Get chatting right away with anyone, anywhere",
         features: [
             "20 messages daily limit in One day in a Chat",
             "2 Participant limit in a Chat",
@@ -23,13 +25,11 @@ const tiers = [
             "Unlimited daily messages in a Chat",
             "Unlimited Participant limit in a Chat",
             "50 Chat Room available",
-            "Upto 5 Diffrent Languages supported trnaslation",
+            "Upto 5 Different Languages supported translation",
             "Multimedia Sharing Options in chatting",
             "1-Hour dedicated support response time",
-            "Explore New features on monhtly bases",
-
+            "Explore New features on monthly bases",
         ],
-
     },
     {
         name: "Advance",
@@ -41,94 +41,40 @@ const tiers = [
             "Unlimited daily messages in a Chat",
             "Unlimited Participant limit in a Chat",
             "100 Chat Room available",
-            "Upto 15 Diffrent Languages supported trnaslation",
+            "Upto 15 Different Languages supported translation",
             "Multimedia Sharing Options in chatting",
             "1-Hour dedicated support response time",
-            "Explore New featuress on monhtly bases",
+            "Explore New features on monthly bases",
             "AI profile Avatar maker",
-
         ],
-
-    }
-
-
-
-]
+    },
+];
 
 function PricingCards() {
     return (
-
-        <div>
-
+        <div className="glass-container">
             {tiers.map((tier) => (
-                <div key={tier.id} className="flex flex-col max-w-6xl bg-white gap-2 grid grid-cols-3 max-auto rounded-md py-2 px-5 justify-center items-center m-3" >
-
-                    <div>{tier.description}</div>
-
-                    <div className="flex text-center justify-between" >
-
-                        <h1 className="text-black font-semibold" >{tier.name} </h1>
-                        <div className="text-black" >{tier.priceMonthly} </div>
-
-                        {tier.features.map((feature) => (
-
-                            <div key={tier.id} className="p-3 row-auto text-black " >
-
-                                <li>{feature}</li>
-
-                            </div>
+                <div key={tier.id} className="glass-card max-w-3xl">
+                    <h1 className="card-title dark:text-white">{tier.name}</h1>
+                    <div className="card-price">{tier.priceMonthly}</div>
+                    <p className="card-description dark:text-gray-400">{tier.description}</p>
+                    <ul className="card-features">
+                        {tier.features.map((feature, index) => (
+                            <li key={index}>
+                                <svg className="feature-icon " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                                </svg>
+                                <span className=' dark:text-gray-100 text-base' >{feature}</span>
+                            </li>
                         ))}
-
-
-                    </div>
-
+                    </ul>
+                    <a href={tier.href} className="card-button">
+                        Get started
+                    </a>
                 </div>
             ))}
-
-
         </div>
-
-
-
-
-        // <div className="flex flex-col p-6 mx-auto max-w-md text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white hover:shadow-2xl">
-        //     <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
-        //     <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
-        //     <div className="flex justify-center items-baseline my-8">
-        //         <span className="mr-2 text-5xl font-extrabold">$29</span>
-        //         <span className="text-gray-500 dark:text-gray-400">/month</span>
-        //     </div>
-        //     {/* <!-- List --> */}
-        //     <ul role="list" className="mb-8 space-y-4 text-left">
-        //         <li className="flex items-center space-x-3">
-
-        //             <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        //             <span>Individual configuration</span>
-        //         </li>
-        //         <li className="flex items-center space-x-3">
-
-        //             <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        //             <span>No setup, or hidden fees</span>
-        //         </li>
-        //         <li className="flex items-center space-x-3">
-
-        //             <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        //             <span>Team size: <span className="font-semibold">1 developer</span></span>
-        //         </li>
-        //         <li className="flex items-center space-x-3">
-
-        //             <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        //             <span>Premium support: <span className="font-semibold">6 months</span></span>
-        //         </li>
-        //         <li className="flex items-center space-x-3">
-
-        //             <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-        //             <span>Free updates: <span className="font-semibold">6 months</span></span>
-        //         </li>
-        //     </ul>
-        //     <a href="#" className="text-white bg-indigo-500 hover:bg-indigo-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Get started</a>
-        // </div>
     );
 }
 
-export default PricingCards
+export default PricingCards;
