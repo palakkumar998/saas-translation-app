@@ -28,7 +28,8 @@ function PricingPage() {
 
                 {/* //?  Pricing Component */}
                 <PricingCards />
- 
+
+
 
             </div>
         </div>
