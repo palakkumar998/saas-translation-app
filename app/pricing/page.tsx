@@ -27,7 +27,7 @@ function PricingPage() {
                 </div>
 
                 {/* //?  Pricing Component */}
-                <PricingCards />
+                <PricingCards redirect={true} />
 
 
 
