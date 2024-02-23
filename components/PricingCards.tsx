@@ -1,3 +1,5 @@
+
+import { CheckIcon } from 'lucide-react';
 import React from 'react';
 // import './PricingCards.css'; // Import the CSS file for styling
 
@@ -52,25 +54,28 @@ const tiers = [
 
 function PricingCards() {
     return (
-        <div className="glass-container">
+        <div className="flex space-x-3 justify-center">
             {tiers.map((tier) => (
-                <div key={tier.id} className="glass-card max-w-3xl">
-                    <h1 className="card-title dark:text-white">{tier.name}</h1>
-                    <div className="card-price">{tier.priceMonthly}</div>
-                    <p className="card-description dark:text-gray-400">{tier.description}</p>
-                    <ul className="card-features">
+                <div key={tier.id} className="items-center bg-slate-100 dark:bg-gray-900 p-5 rounded-2xl justify-between max-w-3xl">
+                    <h1 className="card-title p-2 dark:text-white text-white text-md">{tier.name}</h1>
+                    <div className="card-price px-5">{tier.priceMonthly}</div>
+                    <p className="card-description px-6 dark:text-gray-400">{tier.description}</p>
+                    <ul className="card-features px-5">
                         {tier.features.map((feature, index) => (
                             <li key={index}>
-                                <svg className="feature-icon " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                                </svg>
+                                <CheckIcon color='green' size={20} className='m-2' />
                                 <span className=' dark:text-gray-100 text-base' >{feature}</span>
                             </li>
                         ))}
                     </ul>
-                    <a href={tier.href} className="card-button">
-                        Get started
-                    </a>
+
+                    <div className="text-center">
+
+                        <a href={tier.href} className="card-button">
+                            Get started
+                        </a>
+                    </div>
+
                 </div>
             ))}
         </div>

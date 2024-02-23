@@ -136,6 +136,7 @@
 
 .card-button {
   display: inline-block;
+  justify-items: center;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
