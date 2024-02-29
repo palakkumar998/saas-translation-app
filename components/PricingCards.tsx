@@ -59,7 +59,7 @@ function PricingCards({ redirect }: { redirect: boolean }) {
         <div className="flex space-x-3 justify-center">
             {tiers.map((tier) => (
                 <div key={tier.id} className="glass-card items-center bg-slate-100 dark:bg-gray-900 p-5 rounded-2xl justify-between max-w-3xl">
-                    <h1 className="card-title dark:text-white text-white text-md">{tier.name}</h1>
+                    <h1 className="card-title dark:text-white px-5 text-white text-md">{tier.name}</h1>
                     <div className="card-price px-5">{tier.priceMonthly}</div>
                     <p className="card-description px-6 dark:text-gray-400">{tier.description}</p>
                     <ul className="card-features">
