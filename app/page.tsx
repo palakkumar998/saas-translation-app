@@ -8,7 +8,7 @@ export default function Home() {
           {/* Announcement Banner */}
           <div className="flex justify-center">
             <a className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400" href="#">
-              Explore the Capital Product
+              Explore our featured subscription plans
               <span className="flex items-center gap-x-1">
                 <span className="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500">Explore</span>
                 <svg className="flex-shrink-0 size-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -22,35 +22,28 @@ export default function Home() {
           {/* Title */}
           <div className="mt-5 max-w-xl text-center mx-auto">
             <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-              Supercharged Preline Experience
+              Supercharged chat Experience
             </h1>
           </div>
           {/* End Title */}
 
           <div className="mt-5 max-w-3xl text-center mx-auto">
-            <p className="text-lg text-gray-600 dark:text-gray-400">Preline is a large open-source project, crafted with Tailwind CSS framework by Hmlstream.</p>
+            <p className="text-lg text-gray-600 dark:text-gray-400">Connect globally through our ghost chat app on Gmail, breaking language barriers for otherworldly conversations.</p>
           </div>
 
           {/* Buttons */}
           <div className="mt-8 gap-3 flex justify-center">
-            <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800" href= {"/pricing"}>
-              <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-              </svg>
+            <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800" href={"/pricing"}>
               Check our Pricing
             </a>
           </div>
           {/* End Buttons */}
 
           <div className="mt-10 relative max-w-8xl mx-auto">
-            <div className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
+            <div className="w-full object-fill h-96 sm:h-[700px] bg-[url('https://raw.githubusercontent.com/palakkumar998/saas-translation-app/master/images/live_chat_anim_2.gif')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
 
             <div className="absolute inset-0 size-full">
               <div className="flex flex-col justify-center items-center size-full">
-                <a className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
-                  <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3" /></svg>
-                  Play the overview
-                </a>
               </div>
             </div>
 
