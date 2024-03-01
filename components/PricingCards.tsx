@@ -8,7 +8,7 @@ import CheckoutButton from './CheckoutButton';
 const tiers = [
     {
         name: "Free",
-        id: null,
+        id: 123,
         href: "#",
         priceMonthly: "0₹",
         description: "Get chatting right away with anyone, anywhere",
@@ -64,17 +64,19 @@ function PricingCards({ redirect }: { redirect: boolean }) {
                     <p className="card-description px-6 dark:text-gray-400">{tier.description}</p>
                     <ul className="card-features">
                         {tier.features.map((feature, index) => (
-                            <li key={index}>
+
+                            <li key={index} >
                                 <CheckIcon color='green' size={20} className='m-2' />
-                                <span className=' dark:text-gray-100 text-base ' >{feature}</span>
+                                <span className=' dark:text-gray-100 text-base' >{feature}</span>
                             </li>
+
                         ))}
                     </ul>
 
                     <div className='text-center absolute left-5 mt-6 right-5 bottom-5 '>
 
                         {redirect ? (
-                            <Link href='/register' className='block rounded-lg bg-blue-500 mt-9 px-1.5 py-2 text-sm font-semibold  text-white hover:bg-blue-800' >Get Started</Link>
+                            <Link href='/register' className='block rounded-lg bg-blue-500 mt-9 px-1.5 py-2 text-sm font-semibold  text-white hover:bg-blue-800' >Get Started now</Link>
 
                         ) : (
 

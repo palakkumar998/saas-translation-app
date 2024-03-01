@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <ClientProviders>
       {/* for Client Provider these all below componants consider as children  */}
-      <html lang="en">
+      <html lang="en" className="scroll-smooth" >
         <body className={inter.className}>
           <ThemeProvider
             attribute="class"
