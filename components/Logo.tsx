@@ -17,7 +17,6 @@ function Logo() {
                     />
                 </AspectRatio>
             </div>
-            Home
         </Link>
     )
 }

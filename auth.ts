@@ -11,5 +11,9 @@ export const authOptions: NextAuthOptions = {
         }),
 
     ],
+    session: {
+        strategy: 'jwt'
+    }
+
 
 } satisfies NextAuthOptions
